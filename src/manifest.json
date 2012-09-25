@@ -1,0 +1,26 @@
+{
+    "name": "Google+ Auto+1",
+    "description": "ショートカットキー(ctrl)を使用してGoogle+の記事・コメントの+1ボタンを一括クリックします。",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": { "19": "icon19.png",
+           "48": "icon48.png" },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "tabs", "https://plus.google.com/*"
+    ],
+     "content_scripts": [
+    {
+      "matches": ["https://plus.google.com/*"],
+      "js": ["jquery-1.8.2.min.js","click.js"],
+      "run_at" : "document_idle"
+    }
+  ],
+    "options_page": "options.html",
+    "page_action": {
+        "default_icon": "icon19.png",
+        "default_title": "Google+ Auto+1"
+    }  
+}

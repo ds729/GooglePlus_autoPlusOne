@@ -14,7 +14,7 @@ $(function(){
 				len_48CO =$('.us48co-comment-plusone').find('.eswd').length;
 				$('.us48co-comment-plusone').find('.eswd').click();
 			}
-		console.log(len_article+len_48CO+'件+1しました。');
+		//console.log(len_article+len_48CO+'件+1しました。');
 		result_area.text(len_article+len_48CO+'件+1しました。');
 		$('.autoClickTemp').show().delay('2000').fadeOut('slow');
 		}
